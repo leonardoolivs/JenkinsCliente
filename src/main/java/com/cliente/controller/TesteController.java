@@ -4,11 +4,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RequestMapping(value= "/teste")
+@RequestMapping(value= "/")
 @RestController
 public class TesteController {
 	
-	@GetMapping(value="/hello")
+	@GetMapping
 	public String retornar() {
 		return "Hello World";
 	}
